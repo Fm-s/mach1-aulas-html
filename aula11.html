@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body>
+    <form action="http://mach1.great-site.net/cadastroRecruta.php" method="post" enctype="multipart/form-data">
+    <label>
+        Seu e-mail
+        <input placeholder="seuemail@mall.com" name="email" type="email">
+    </label>
+    <br>
+    <label>
+        Senha
+        <input placeholder="Crie uma senha" name="senha" type="password">
+    </label>
+    <br>
+    <label>
+        Nome Completo
+        <input placeholder="intorme o seu nome" name="nomeCompleto" type="text">
+    </label>
+    <br>
+    <label>
+        CPF (Apenas números)
+        <input placeholder="00000000000" name="cpf" type="number">
+    </label>
+    <br>
+    <label>
+        RG (Apenas números)
+        <input placeholder="00000000000" name="rg" type="number">
+    </label>
+    <br>
+    <label>
+        Data de nascimento
+        <input placeholder="acimmraaaa" name="nascimento" type="date">
+    </label>
+
+    <fieldset>
+        <legend>Necessidades especiais</legend>
+        <input type="radio" name="necessidadesEspeciais" id="radioSIM" value="Sim"><label for="radioSIM"> SIM</label>
+        <br>
+        <input type="radio" name="necessidadesEspeciais" id="radioNAO" value="Não"><label for="radioNAO"> NÃO</label>
+    </fieldset>
+
+    <label>
+        Estado de residencia
+        <select name="estado">
+            <option value="SP">São Paulo</option>
+            <option value="BA">Bahia</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MA">Maranhão</option>
+        </select>
+    </label>
+
+    <fieldset name="especializacoes">
+        <legend>Especialização desejada</legend>
+        <input type="checkbox" name="especializacao1" id="especializacao1" value="Mecânica da aeronaves (Back-end)"><label for="especializacao1"> Mecânica da aeronaves (Back-end)</label>
+        <br>
+        <input type="checkbox" name="especializacao2" id="especializacao2" value="Montagem da aeronaves (Front-end)"><label for="especializacao2"> Montagem da aeronaves (Front-end)</label>
+        <br>
+        <input type="checkbox" name="especializacao3" id="especializacao3" value="Engenheiro de aeronaves (FullStack)"><label for="especializacao3"> Engenheiro de aeronaves (FullStack)</label>
+        <br>
+        <input type="checkbox" name="especializacao4" id="especializacao4" value="Piloto (Tester)"><label for="especializacao4"> Piloto (Tester)</label>
+        <br>
+        <input type="checkbox" name="especializacao5" id="especializacao5" value="Operador de trafego aéreo (Scrum Master)"><label for="especializacao5"> Operador de trafego aéreo (Scrum Master)</label>
+    </fieldset>
+    <label>
+        Adicione sua foto: <input type="file" name="foto">
+    </label>
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
